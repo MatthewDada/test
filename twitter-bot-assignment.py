@@ -1,10 +1,10 @@
 import tweepy
-
-api_key = "Y4rwzfaembgiW3LhBco0SldVk"
-api_key_secret = "8P794lsMVTltbgK3K2xJ4uZJIpohAwoPFRfDaxgIEyeEZF4HKC"
-bearer_token = "AAAAAAAAAAAAAAAAAAAAAP%2FGaQEAAAAACVn03iqSsVzGlu8UHchcDU1aPLE%3Du6VFl4qo4kQbWJgiJyFyqqndpSdCPDz4Ar9SoPuy4aVjL2PXUB"
-access_token_secret = "opCr3asJM8ssNCWYRg6PSFJNZIrBleei6IDS5TGVTvm9P"
-access_token = "1505604838910009348-27CqzHepgtOCj2ZFxG87pegOD7jWwi"
+# I had to edit the keys to avoid stories that touch, but in here, you are to put your own keys 
+api_key = "#########"
+api_key_secret = "########"
+bearer_token = "########"
+access_token_secret = "########"
+access_token = "########"
 
 #initialize a new tweepy instance
 client = tweepy.Client(bearer_token, api_key, api_key_secret, access_token, access_token_secret, wait_on_rate_limit=True)
@@ -41,11 +41,7 @@ for j in user_tweets_list:
 
 
 """
-print(tweet_id)
-tweets = user_tweets_list[1].data
-print(type(tweets))
-tweets_text = tweets.get('text')
-print(tweets_text)
+# below are some main codes you might also be interested in, they are quite self explanatory. 
 
 def unFollowUser(username):
     user=client.get_user(username=username)
